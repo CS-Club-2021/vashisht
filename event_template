@@ -1,0 +1,11 @@
+event_name: "Vashisht CTF"
+description: "A very good ctf"
+image: "image name [same as drive]"
+rules:
+	- "ruleno 1"
+	- "rule no 2"
+registration: "google form"
+contact: 
+	- name: "name"
+	- mail: "mail"
+	- phone_no: "phone no"
