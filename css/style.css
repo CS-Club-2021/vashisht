@@ -1007,18 +1007,6 @@ Schedule
   Carousel
   ----------------------------*/
 
-div.carousel-page {
-  position: relative;
-}
-
-div.carousel-page img {
-  height: 100%;
-  position: absolute;
-  top: 0;
-  right: 0;
-  filter: grayscale(0.5);
-}
-
 .carousel-indicators li {
   background-color: #000;
 }
@@ -1119,6 +1107,38 @@ Speakers Section
 
 .carousel-page > p {
   padding-left: 2.5rem;
+}
+
+div.carousel-page {
+  position: relative;
+}
+
+div.carousel-page img {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  filter: grayscale(0.5);
+}
+
+@media (max-width: 767px) {
+  div.carousel-page img {
+    display: none;
+  }
+
+  .carousel-page {
+    padding: 3rem 1.5rem 3rem 1.5rem;
+  }
+
+  .carousel-page > h2 {
+    padding-left: 1rem;
+    text-align: center;
+  }
+
+  .carousel-page > p {
+    padding-left: 1rem;
+    text-align: center;
+  }
 }
 
 div.details {
