@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <style>
+      :root {
+        --clr: #4125dd;
+      }
+      body {
+        background: #eeeeee;
+        height: 100vh;
+        width: 100vw;
+        padding: 0;
+        margin: 0;
+        overflow: hidden;
+      }
+      div {
+        max-width: 100%;
+        padding: 10px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      section {
+        max-height: 100%;
+        max-width: 600px;
+        background: white;
+        min-height: 75%;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 10px;
+        overflow: hidden;
+        flex-wrap: wrap;
+        text-align: center;
+      }
+      h1 {
+        text-transform: uppercase;
+        font-weight: bold;
+      }
+      h4 {
+        font-weight: 400;
+      }
+      button {
+        margin: 10px 0;
+        outline: none;
+        font-family: "Poppins", sans-serif;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 30px;
+        font-size: 15px;
+        box-sizing: border-box;
+        box-shadow: 0.5px 0.5px 5px 0.3px rgba(0, 0, 0, 0.5);
+        background: var(--clr);
+        color: white;
+        font-weight: 700;
+        text-transform: uppercase;
+        word-spacing: 3px;
+        cursor: pointer;
+      }
+      span {
+        color: var(--clr);
+      }
+    </style>
+    <title>Vashisht | Economic payments</title>
+  </head>
+  <body>
+    <div>
+      <section>
+        <h1>Economic</h1>
+        <h4><span>Vashisht</span> | IIITDM Kancheepuram</h4>
+        <p>
+          Veniam ea officia non occaecat enim id deserunt. Ut qui ex dolor
+          pariatur Lorem veniam voluptate. Mollit nostrud ut nostrud do
+          cupidatat amet esse.
+        </p>
+        <button>Pay &#8377; 1000</button>
+      </section>
+    </div>
+    <script type="module">
+      import { payAmount } from "../js/paymenthandler.js";
+      const data = {
+        amount: 1000,
+      };
+      payAmount(data, document.querySelector("button"));
+    </script>
+  </body>
+</html>
