@@ -1,0 +1,255 @@
+:root {
+    --button-theme-color: aquamarine;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.section-heading {
+    margin: 4rem;
+}
+
+.events > ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 450px);
+    place-content: center;
+}
+.events ul li {
+    list-style: none;
+}
+.carousel-page {
+    display: grid;
+    place-content: center;
+  /* background-color: #eee; */
+  /* box-shadow: #777; */
+  min-width: 150px;
+  min-height: 300px;
+  padding: 2rem 4rem;
+  border: solid #eee 1px;
+  /* border-radius: 10px; */
+  margin: 1rem;
+  transition: background-color 0.3s ease;
+}
+.carousel-page:hover {
+    background-color: rgb(245, 245, 245);
+    cursor: pointer;
+}
+
+.carousel-page > h2 {
+  /* padding-left: 2.5rem; */
+  font-size: 2.5rem;
+}
+
+div.carousel-page {
+  position: relative;
+}
+
+
+.get-details {
+    /* position: absolute;
+    bottom: 20px;
+    left: 60px; */
+    background-color: var(--button-theme-color);
+    border-color: var(--button-theme-color);
+    color: black;
+    box-shadow: none;
+    margin: 0;
+}
+.get-details:hover {
+    border-color: var(--button-theme-color);
+    background-color: transparent;
+}
+#registerbutton {
+    margin: 0;
+}
+
+div.carousel-page img {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  filter: grayscale(0.5);
+}
+
+
+
+
+.carousel-page-modal {
+    position: absolute;
+    z-index: 3;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(127, 255, 212, 0.144);
+    backdrop-filter: blur(0.8rem);
+    display: grid;
+    place-items: center;
+    transition: opacity 0.3s ease;
+}
+.hide {
+    opacity: 0;
+    pointer-events: none;
+}
+.main-content {
+    width: 80vw;
+    height: 80vh;
+    background-color: var(--button-theme-color);
+    display: grid;
+    place-items: center start;
+    padding: 5rem;
+    position: relative;
+    box-shadow: 2px 2px 10px 0 rgb(228, 228, 228);
+    /* border-radius: 10px; */
+}
+
+.close-button {
+    width: 30px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 2rem;
+    opacity: 0.7;
+    transition: opacity 0.2s ease;
+}
+.close-button:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.modal-details {
+    z-index: 2;
+    width: 60%;
+}
+
+.modal-details > h2 {
+    word-wrap: break-word;
+    max-width: 100%;
+}
+
+.modal-details img {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: -1;
+    height: 60%;
+    filter: grayscale(0.7);
+    margin: 0 3rem 0 0;
+}
+
+.details {
+    display: flex;
+    gap: 30%;
+    flex-wrap: wrap;
+    align-items: baseline;
+    margin-bottom: 50px;
+}
+
+ul .right--list li,
+ul .left--list li {
+    width: fit-content;
+}
+
+.left--list,
+.right--list {
+    margin-top: 1rem;
+}
+
+
+@media (max-width: 1060px){
+    .modal-details > h2 {
+        width: fit-content;
+    }
+    .modal-details img {
+      display: none;
+  }
+
+  .main-content{
+      background-image: linear-gradient(to right, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)),
+      url(../images/teams/s-1.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 80vw;
+      height: 80vh;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+}
+
+
+@media (max-width: 767px) {
+    .events > ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+    .events > ul > li {
+        /* display: flex;
+        flex-direction: column;
+        justify-content: center; */
+        margin: 1rem auto;
+        width: 90vw;
+    }
+  .carousel-page {
+      margin: 0;
+  }
+
+  .carousel-page > h2 {
+    font-size: 2rem;
+  }
+
+  .carousel-page > p {
+    font-size: 1.1rem;
+  }
+  .carousel-page button {
+      width: 200px;
+      height: 40px;
+      display: grid;
+      place-content: center;
+  }
+
+  .modal-details img {
+      display: none;
+  }
+
+  .main-content{
+      background-image: linear-gradient(to right, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)),
+      url(../images/teams/s-1.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 100vw;
+      height: 100vh;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .modal-details > h2 {
+      font-size: 2rem;
+  }
+  .modal-details > p {
+      font-size: 1.1rem;
+  }
+
+  .details {
+      gap: 0;
+      flex-direction: column;
+  }
+
+  #registerbutton {
+      width: 240px;
+  }
+
+}
+
+
+

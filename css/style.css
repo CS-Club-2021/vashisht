@@ -1007,7 +1007,7 @@ Schedule
   Carousel
   ----------------------------*/
 
-.carousel-indicators li {
+/* .carousel-indicators li {
   background-color: #000;
 }
 .carousel-indicators li.active {
@@ -1029,7 +1029,7 @@ Schedule
   box-shadow: 0 1px 2px 0 gray;
   background-image: url("../images/right.svg");
   background-position: 1px 0;
-}
+} */
 
 /*-------------------------------
 Pricing
@@ -1100,7 +1100,7 @@ Pricing
 Speakers Section
  ------------------------------------ */
 
-.carousel-page {
+/* .carousel-page {
   display: flex;
   flex-direction: column;
   background-color: #eee;
@@ -1148,7 +1148,7 @@ div.carousel-page img {
     padding-left: 1rem;
     text-align: center;
   }
-}
+} */
 
 div.details {
   display: flex;
