@@ -74,7 +74,7 @@ div.carousel-page img {
   transform: translate(-50%, -50%);
   width: 100vw;
   height: 100vh;
-  background-color: rgba(127, 255, 212, 0.144);
+  background-color: rgba(255, 255, 255, 0.144);
   backdrop-filter: blur(0.8rem);
   display: grid;
   place-items: center;
