@@ -434,16 +434,20 @@ banner
 .section-banner {
   min-height: 700px;
   position: relative;
-  background: #eee;
-  background-repeat: no-repeat;
-  background-position: 65% 50%;
+  background: url("../images/banner/speakers-bg-black.jpg") no-repeat;
   background-size: cover;
 }
 
+.section-banner .banner-content > h3 {
+  color: white;
+}
+
 .section-banner .banner-content h1 {
-  font-size: 100px;
+  font-size: 110px;
   line-height: 1.2;
-  letter-spacing: -0.04em;
+  letter-spacing: -0.02em;
+  -webkit-text-stroke-width: 2px;
+  /* -webkit-text-stroke-color: #ff007a; */
 }
 
 @media (max-width: 991px) {
@@ -459,7 +463,7 @@ banner
 }
 
 .section-banner .banner-content span {
-  color: #444;
+  color: rgb(189, 189, 189);
   font-size: 18px;
 }
 
@@ -509,6 +513,10 @@ About
   left: 30%;
   width: 100%;
   border: 10px solid #ffffff;
+}
+
+.about-content-wrap span {
+  -webkit-text-stroke-color: rgb(112, 112, 112);
 }
 
 @media (max-width: 991px) {
@@ -921,6 +929,10 @@ Team
 /*-------------------------------
 Schedule
 -------------------------------*/
+.section-schedule .section-heading .heading .stroke-text {
+  -webkit-text-stroke-color: rgb(112, 112, 112);
+}
+
 #TopicTab {
   background: #eee;
   border-radius: 5px;
@@ -1343,6 +1355,10 @@ Countdown
 /*-------------------------------
 Blog
 -------------------------------*/
+.section-bottom .section-heading .heading .stroke-text {
+  -webkit-text-stroke-color: rgb(112, 112, 112);
+}
+
 .blog-article {
   transition: all 0.35s ease;
 }
