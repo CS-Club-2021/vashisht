@@ -81,3 +81,16 @@
     });
   });
 })(jQuery);
+
+const brochure = document.querySelector(".brochure");
+const overlay = document.querySelector(".overlay");
+const brochureButton = document.getElementById("brochure-btn");
+brochureButton.addEventListener("click", (e) => {
+  e.preventDefault();
+  overlay.classList.remove("hidden");
+  brochure.classList.remove("hidden");
+});
+overlay.addEventListener("click", () => {
+  overlay.classList.add("hidden");
+  brochure.classList.add("hidden");
+});

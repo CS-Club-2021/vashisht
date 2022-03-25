@@ -1514,6 +1514,38 @@ footer
   }
 }
 
+.overlay {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  z-index: 100;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+}
+
+.brochure {
+  position: fixed;
+  top: 80px;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 100;
+}
+.brochure embed {
+  width: 90vw;
+  height: 80vh;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .brochure {
+    left: 50%;
+    transform: translate(-50%);
+  }
+}
 /*-------------------------------
 Responsive
 -------------------------------*/

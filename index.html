@@ -37,6 +37,11 @@
   </head>
 
   <body id="body">
+    <!-- brochure -->
+    <div class="overlay hidden"></div>
+    <div class="brochure hidden">
+      <embed src="images/brochure.pdf" type="application/pdf" />
+    </div>
     <!--  preloader start -->
     <div id="tb-preloader">
       <div class="tb-preloader-wave"></div>
@@ -76,7 +81,7 @@
                 <a class="nav-link" href="index.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="events.html">Events</a>
+                <a class="nav-link" href="#" id="brochure-btn">Events</a>
               </li>
 
               <li class="nav-item dropdown">
@@ -139,9 +144,7 @@
     <!-- Navigation End -->
 
     <!-- Section START-->
-    <section
-      class="section-banner d-flex align-items-center"
-    >
+    <section class="section-banner d-flex align-items-center">
       <div class="container">
         <div class="row">
           <div class="col-lg-7 mr-auto">
@@ -633,7 +636,11 @@
                 <li>Gift Box</li>
                 <li>Email listing</li>
               </ul>
-              <a href="/payments/early.html" class="btn btn-hero btn-rounded mt-3 mb-5">Get now</a>
+              <a
+                href="/payments/early.html"
+                class="btn btn-hero btn-rounded mt-3 mb-5"
+                >Get now</a
+              >
             </div>
           </div>
 
@@ -653,7 +660,9 @@
                 <li>Public ad listing</li>
                 <li>Email listing</li>
               </ul>
-              <a href="/payments/team.html" class="btn btn-secondary btn-rounded mt-3 mb-5"
+              <a
+                href="/payments/team.html"
+                class="btn btn-secondary btn-rounded mt-3 mb-5"
                 >Get now</a
               >
             </div>
@@ -676,7 +685,9 @@
                 <li>Dinner Serve</li>
                 <li>Email listing</li>
               </ul>
-              <a href="/payments/economic.html" class="btn btn-secondary btn-rounded mt-3 mb-5"
+              <a
+                href="/payments/economic.html"
+                class="btn btn-secondary btn-rounded mt-3 mb-5"
                 >Get now</a
               >
             </div>
