@@ -1549,10 +1549,18 @@ footer
   display: none;
 }
 
+.takeout {
+  text-align: justify;
+  width: 80%;
+  margin: auto auto;
+  padding: 50px 0;
+  font-size: 21px;
+}
+
 @media (max-width: 768px) {
-  .brochure {
-    left: 50%;
-    transform: translate(-50%);
+  .takeout {
+    width: 95%;
+    font-size: 17px;
   }
 }
 /*-------------------------------
