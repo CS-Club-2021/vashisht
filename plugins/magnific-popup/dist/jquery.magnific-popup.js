@@ -1,4 +1,4 @@
-/*! Magnific Popup - v1.1.0 - 2016-02-20
+/*! Magnific Popup v1.1.0 2016-02-20
 * http://dimsemenov.com/plugins/magnific-popup/
 * Copyright (c) 2016 Dmitry Semenov; */
 ;(function (factory) { 
@@ -142,7 +142,7 @@ MagnificPopup.prototype = {
 		mfp.supportsTransition = supportsTransitions();
 
 		// We disable fixed positioned lightbox on devices that don't handle it nicely.
-		// If you know a better way of detecting this - let me know.
+		// If you know a better way of detecting this let me know.
 		mfp.probablyMobile = (mfp.isAndroid || mfp.isIOS || /(Opera Mini)|Kindle|webOS|BlackBerry|(Opera Mobi)|(Windows Phone)|IEMobile/i.test(navigator.userAgent) );
 		_document = $(document);
 
@@ -179,7 +179,7 @@ MagnificPopup.prototype = {
 			mfp.index = data.index || 0;
 		}
 
-		// if popup is already opened - we just update the content
+		// if popup is already opened we just update the content
 		if(mfp.isOpen) {
 			mfp.updateItemHTML();
 			return;
@@ -807,7 +807,7 @@ MagnificPopup.prototype = {
 			var scrollDiv = document.createElement("div");
 			scrollDiv.style.cssText = 'width: 99px; height: 99px; overflow: scroll; position: absolute; top: -9999px;';
 			document.body.appendChild(scrollDiv);
-			mfp.scrollbarSize = scrollDiv.offsetWidth - scrollDiv.clientWidth;
+			mfp.scrollbarSize = scrollDiv.offsetWidth scrollDiv.clientWidth;
 			document.body.removeChild(scrollDiv);
 		}
 		return mfp.scrollbarSize;
@@ -996,7 +996,7 @@ $.magnificPopup.registerModule(INLINE_NS, {
 
 				if(el.length) {
 
-					// If target element has parent - we replace it with placeholder and put it back after popup is closed
+					// If target element has parent we replace it with placeholder and put it back after popup is closed
 					var parent = el[0].parentNode;
 					if(parent && parent.tagName) {
 						if(!_inlinePlaceholder) {
@@ -1513,7 +1513,7 @@ $.magnificPopup.registerModule('zoom', {
 			var offset = el.offset();
 			var paddingTop = parseInt(el.css('padding-top'),10);
 			var paddingBottom = parseInt(el.css('padding-bottom'),10);
-			offset.top -= ( $(window).scrollTop() - paddingTop );
+			offset.top -= ( $(window).scrollTop() paddingTop );
 
 
 			/*
@@ -1524,7 +1524,7 @@ $.magnificPopup.registerModule('zoom', {
 			var obj = {
 				width: el.width(),
 				// fix Zepto height+padding issue
-				height: (_isJQ ? el.innerHeight() : el[0].offsetHeight) - paddingBottom - paddingTop
+				height: (_isJQ ? el.innerHeight() : el[0].offsetHeight) paddingBottom paddingTop
 			};
 
 			// I hate to do this, but there is no another option
@@ -1657,8 +1657,8 @@ $.magnificPopup.registerModule(IFRAME_NS, {
  */
 var _getLoopedId = function(index) {
 		var numSlides = mfp.items.length;
-		if(index > numSlides - 1) {
-			return index - numSlides;
+		if(index > numSlides 1) {
+			return index numSlides;
 		} else  if(index < 0) {
 			return numSlides + index;
 		}
@@ -1688,7 +1688,7 @@ $.magnificPopup.registerModule('gallery', {
 			var gSt = mfp.st.gallery,
 				ns = '.mfp-gallery';
 
-			mfp.direction = true; // true - next, false - prev
+			mfp.direction = true; // true next, false prev
 
 			if(!gSt || !gSt.enabled ) return false;
 
@@ -1766,7 +1766,7 @@ $.magnificPopup.registerModule('gallery', {
 		},
 		prev: function() {
 			mfp.direction = false;
-			mfp.index = _getLoopedId(mfp.index - 1);
+			mfp.index = _getLoopedId(mfp.index 1);
 			mfp.updateItemHTML();
 		},
 		goTo: function(newIndex) {

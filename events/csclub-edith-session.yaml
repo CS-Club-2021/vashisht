@@ -1,0 +1,8 @@
+club_name: "CS Club"
+contact:
+  name: "Atharva Kadlag"
+  mail: ced19i015@iiitdm.ac.in
+  phone_no: 7620763769
+description: "Understand key security concepts and tag along with the host to explore the world of live simulated hacking. You shall learn to attack a machine over vpn in a secure environment to acquire root access!!!"
+event_name: "Hack it live"
+image: csclub-hackitlive.jpeg
