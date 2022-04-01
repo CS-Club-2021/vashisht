@@ -935,7 +935,8 @@ Schedule
 
 #TopicTab {
   background: #eee;
-  border-radius: 5px;
+  border-radius: 8px;
+  color: #111111;
 }
 
 .nav-justified .nav-item {
@@ -991,7 +992,9 @@ Schedule
 .time-table .content-img {
   flex-basis: 20%;
 }
-
+.content {
+  color: #111111;
+}
 .time-table .content-img img {
   border-radius: 100%;
 }
@@ -1568,3 +1571,7 @@ Responsive
 -------------------------------*/
 
 /*# sourceMappingURL=maps/style.css.map */
+
+.hide-tabs {
+  display: none;
+}
